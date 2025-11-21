@@ -1,0 +1,156 @@
+* {box-sizing: border-box; margin:0%; padding:0%}
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+.FtrWrap {
+  display:flex;
+  position: fixed;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  animation-name: FtrAnimation;
+  opacity: 0;
+  animation-duration: 6s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+  display: grid;
+  grid-template-columns: 32vw 36vw 32vw;
+  grid-template-rows: 0% 0% 0% 35px;
+}
+
+.Item {
+  display:flex;
+  align-content: start;
+  text-decoration:none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.IdIns {
+  display:flex;
+  justify-content:left;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+
+.IdIns:hover {
+  color:rgb(160, 60, 255);
+  }
+
+.Autor {
+  display:flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.Autor:hover {
+  color:rgb(160, 60, 255);
+}
+.InfoLegal {
+  display:flex;
+  justify-content:right;
+  color:rgb(255, 255, 255);
+  font-size: 16px;
+  font: bold;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.InfoLegal:hover {
+  color:rgb(160, 60, 255);
+}
+
+@keyframes FtrAnimation {
+  0%{
+    filter: grayscale(50%) blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: grayscale(0%) blur(0);
+    opacity: 1;
+  }
+}
+
+.FtrRSMenu {display:none;}
+.FtrRSMenu a {display:none;}
+.FtrRSMenu a:hover {display:none}
+
+/*-----  Responsivo para Tablet y Movil  -----*/
+@media screen and (max-width: 750px) {
+
+  .FtrWrap {
+    display:flex;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 32vw 36vw 32vw;
+    grid-template-rows: 40px 35px 35px 40px;
+  }
+
+  .FtrRSMenu {
+    display:flex;
+    justify-content: center;
+    color: rgb(150, 150, 150);
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  
+  .FtrRSMenu a {
+    display: flex;
+    font-weight:bold;
+    text-decoration:none;
+    justify-content: space-between;
+    border-radius:50px;
+    font-size:16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .FtrRSMenu a:hover {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 9px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(50, 50, 50);
+  }
+
+  .IdIns {
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 2px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .Autor {
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 2px;
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+
+  .InfoLegal {
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 2px;
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
