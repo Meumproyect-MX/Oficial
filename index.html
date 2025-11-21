@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-----Desarollado por MeunProJect
+Autor: g.Moody----->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----  Conexión a Fontawesome)  ----->
+    <script src="https://kit.fontawesome.com/daea61ba94.js" crossorigin="anonymous"></script>
+
+    <!-----  Conexión a Googlefonts)  ----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-----  Datos de la Página  ----->
+    <title>Meun Proyect - Sitio Oficial</title>
+    <link rel="icon" type="image/jpg" href="./04logos/Favicon-MeumProyect - copia.png">
+
+    <!-----  Conexiones a Jquery v3.6.3 (Online o Local) ----->   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>  <!-----  Conexión a Jquery - Online  ----->   
+    <script src="./08Jsc/jqueryv3.7.1.js"></script>  <!-----  Conexión a JqueryLocal  ----->   
+
+    <!-----  Conexiones a Páginas de Estilos  ----->
+    <link rel="stylesheet" href="./09Css/00-NormalizePro.css">
+
+    <link rel="stylesheet" href="./09Css/03-Footer.css">
+    <link rel="stylesheet" href="09Css\05-Content.css">
+    <link rel="stylesheet" href="./09Css/07-Header.css">
+    <link rel="stylesheet" href="./09Css/09-Index.css">
+  </head>
+  
+  <body>
+    <header>  <!-----  Encabezado  ----->  
+    <div class="HdrWrap" id="HdrWrap">  <!-----  Contenedor del Encabezado  ----->
+
+        <img class="HdrLogo01" src="./04logos/logo-Full-White-MeumProyect.png">
+  
+            
+      <div class="BtnHMWrap">  <!-----  Contenedor del Menú Hamburguesa  ----->
+        <button type="button" class="BtnHMopen" id="BtnHMopen" onclick="ShowBtnHMclose()">
+        <button type="button" class="BtnHMclose" id="BtnHMclose" onclick="ShowBtnHMopen()"style="display: none;">
+      </div>
+
+      <nav class="HdrRSMenuWrap" id="HdrRSMenuWrap">  <!-----  Contenedor del Menu de Redes Sociales  ----->
+        <a class="fab fa-facebook" href="#"></a>
+        <a class="fab fa-twitter" href="#"></a>
+        <a class="fab fa-youtube" href="#"></a>
+        <a class="fab fa-linkedin" href="#"></a>
+      </nav>
+      
+      <nav class="HdrMainMenuWrap" id="HdrMainMenuWrap">  <!-----  Contenedor del Menú Principal  ----->
+        <a class="HdrMainMenu" href="#">Servicios</a>
+        <a class="HdrMainMenu" href="#">Productos</a>
+        <a class="HdrMainMenu" href="#">Asistencia</a>
+        <a class="HdrMainMenu" href="#">Soporte</a>
+      </nav>
+    </div>
+    </header>
+
+    <!-----   Inicia Contenido    ----->
+  <div class="ContWrap">  <!-----  Contenedor de la Información  ----->
+    <h1 class="Title01">Bienvenido</h1>
+    <h2 class="Title02">Disfrute su Visita</h2> 
+    </div>
+    <!-----   Termina Contenido    ----->
+    <footer>
+        <div class="FtrWrap">  <!-----    Contenedor del Pie de Página  ----->
+          <nav class="FtrRSMenu">  <!-----Sección con Enlaces a Redes Sociales  ----->
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </nav>
+
+          <!-----  Sección con Informacón legal  ----->
+          <a href="#" class="FtrLegalItem IdIns">Identidad Institucional</a>
+          <a href="#" class="FtrLegalItem Autor">&copy; &nbsp;2023 - LivetecHome</a>
+          <a href="#" class="FtrLegalItem InfoLegal">Información Legal</a>
+
+
+
+        </div>
+      </footer>
+
+
+      <script src="./js/MainIndex.js"></script>
+
+  </body>
+</html>

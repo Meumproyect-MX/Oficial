@@ -1,0 +1,28 @@
+*{box-sizing: border-box; margin:0%; padding:0%}
+
+  /*-----  Enlaces a Fuentes de Googlefonts  -----*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');  /*-----  Al Inicio de la Página  -----*/
+
+
+  /*-----  Fuentes de Importadas (Googlefonts)  -----*/
+  font-family: 'Roboto', sans-serif;  /*-----  Al Texto que se quiere con esta Fuente  -----*/
+
+
+  /*-----  Redacción de Texto  -----*/
+
+  .Técnicas_Tipográficas {  /*-----  Las Opciones pueden tener multipls Variantes  -----*/
+
+    font-size: 900;
+    font-weight:bold;
+    font-style: italic;
+    font-family: Arial;
+    text-decoration: none;
+    list-style: none;
+
+    line-height: 1.25;          /*-----  Interlineado en un mismo Párrafo  -----*/
+    letter-spacing: 0;          /*-----  Espacio entre Letras de un mismo Párrafo  -----*/
+    &nbsp;0                     /*-----  Espacio entre Dos Palabras en un mismo Párrafo  -----*/
+    word-spacing:0;             /*-----  Espacio entre Palabras de un mismo Párrafo  -----*/
+    text-indent: 0px;           /*-----  Sangría en Primera Linea  -----*/
+    text-transform:capitalize;  /*-----  Mayuscula en cada palabra del Parrafo  -----*/
+  }

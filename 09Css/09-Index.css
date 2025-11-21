@@ -1,0 +1,14 @@
+*{box-sizing: border-box; margin:0%; padding:0%}
+html{
+  width: 100VW;
+  height: 100VH;
+}
+
+body {
+  width: 100PX;
+  height: 1200PX;
+  background-image: url("../01BckGrnd/01BckGrdJPG.jpg");
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
